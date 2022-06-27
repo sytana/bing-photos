@@ -1,7 +1,10 @@
-theme: jekyll-theme-cayman
-
-
 timezone: Asia/Shanghai
 
+title: 4K/8K 必应高清壁纸合集
 
+url: "http://blog.bingbz.com"
 
+# Build settings
+theme: jekyll-theme-cayman
+plugins:
+  - jekyll-theme-cayman

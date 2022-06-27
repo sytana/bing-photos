@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-	{% include redirect.html %}
+	<script>
+	if(/^https/.test(location.protocol)) {
+		location.replace(location.href.replace(/^https:\/\//, 'http://'));
+	}
+</script>
+
 
 	<meta charset="utf-8" />
 	<meta http-equiv="Content-Language" content="zh-CN" />
@@ -11,31 +16,30 @@
 	<meta name="applicable-device" content="pc,mobile" />
 	<meta name="msapplication-tap-highlight" content="no" />
 	<meta name="format-detection" content="telephone=no" />
-	<link rel="canonical" href="{{site.url}}{{page.url}}" />
+	<link rel="canonical" href="http://localhost:4000/" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta name="theme-color" content="#157878" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-	<title>{{page.title | default: site.title}} - {{site.title}}</title>
-	<link rel="shortcut icon" href="{{site.url}}/static/favicon.ico" />
+	<title>4K/8K 必应高清壁纸合集 - 4K/8K 必应高清壁纸合集</title>
+	<link rel="shortcut icon" href="http://localhost:4000/static/favicon.ico" />
 
-	{% if page.url == '/' %}
+	
 		<meta name="keywords" content="必应壁纸,高清壁纸,全屏壁纸,4k壁纸,8K壁纸,bingbz.com,bingbz.com博客" />
-	{% else %}
-		<meta name="keywords" content="{{page.title | default: site.title}}" />
-	{% endif %}
+	
 
-	<link rel="stylesheet" href="{{'/assets/css/style.css?v=' | append: site.github.build_revision | relative_url}}" />
+	<link rel="stylesheet" href="/assets/css/style.css?v=0f726f372890f96eef405c54a890c33193444705" />
 </head>
 <body>
 
 	<header class="page-header">
-		<h1 class="project-name">{{page.title | default: site.title}}</h1>
-		<p class="project-tagline">{{page.description | default: site.description | default: site.github.project_tagline}}</p>
+		<h1 class="project-name">4K/8K 必应高清壁纸合集</h1>
+		<p class="project-tagline">每周日发布来自必应搜索每日壁纸的精选图片，包含4K/8K壁纸下载</p>
 	</header>
 
 	<main id="content" class="main-content">
-		{{content}}
+		
+
 
 		<footer class="site-footer">
 			<span class="site-footer-owner">欢迎访问 <a href="http://www.bingbz.com">必应高清壁纸</a>.</span>
