@@ -1,11 +1,15 @@
-timezone: Asia/Shanghai
-
-title: 4K/8K 必应高清壁纸合集
-
 url: "http://blog.bingbz.com"
 main_url: "http://www.bingbz.com"
 
-# Build settings
+
+timezone: Asia/Shanghai
+
+
+title: 4K/8K 必应高清壁纸合集
+
+
 theme: jekyll-theme-cayman
+
+
 plugins:
   - jekyll-theme-cayman
